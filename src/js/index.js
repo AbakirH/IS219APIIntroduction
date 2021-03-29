@@ -1,16 +1,11 @@
 (function ($) {
     $('#citiesTable').DataTable( {
-        "ajax": "http://localhost:9080/api/v1/cities",
+        "ajax": "http://localhost:9080/api/v1/airtravel",
         "columns": [
-            { "data": "id" },
-            { "data": "fldName" },
-            { "data": "fldLat" },
-            { "data": "fldLong" },
-            { "data": "fldCountry" },
-            { "data": "fldAbbreviation" },
-            { "data": "fldCapitalStatus" },
-            { "data": "fldPopulation" }
-
+            { "data": "Month" },
+            { "data": "Column_1958" },
+            { "data": "Column_1959" },
+            { "data": "Column_1960" },
         ]
     } );
 

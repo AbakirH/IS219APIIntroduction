@@ -1,6 +1,5 @@
 version: "2"
 services:
-
   db:
     image: mysql:5.7
     container_name: "MySQL_Database_Node"
@@ -10,3 +9,4 @@ services:
       MYSQL_ROOT_PASSWORD: root
     volumes:
       - ./db:/docker-entrypoint-initdb.d/:ro
+      - ./mysql_data:/var/lib/mysql
